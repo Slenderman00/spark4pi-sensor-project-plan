@@ -1,0 +1,132 @@
+% !TeX root = Report.tex
+\documentclass[12pt]{article}
+
+% Package imports (organized and deduplicated)
+\usepackage{biblatex}
+\usepackage{changepage}
+\usepackage{color}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{sectsty}
+\usepackage{xcolor}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{xurl}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric,positioning,fit,backgrounds}
+\usepackage{./timing-diagrams}
+\usetikzlibrary{calc}
+\setcounter{biburlnumpenalty}{100}
+\setcounter{biburlucpenalty}{100}
+\setcounter{biburllcpenalty}{100}
+
+% \usepackage{background}
+% \backgroundsetup{
+%   position=current page.north west,
+%   angle=0,
+%   nodeanchor=north west,
+%   vshift=-1cm,
+%   hshift=1cm,
+%   color=red,
+%   opacity=1,
+%   scale=1,
+%   contents={Preprint}
+% }
+
+\definecolor{darkblue}{RGB}{0, 0, 102} 
+\hypersetup{
+    colorlinks=true,
+    pdfborder={0 0 0},
+    linkbordercolor=white,
+    urlcolor=darkblue,
+    linkcolor=darkblue,
+    citecolor=darkblue,
+    filecolor=darkblue
+}
+
+% Make bibliography ragged right instead of justified
+\AtBeginDocument{
+  \renewcommand{\bibsetup}{\raggedright}
+}
+% Document configuration
+\restylefloat{table}
+\graphicspath{{./images/}}
+\addbibresource{Library.bib}
+\subsectionfont{\fontsize{12}{14}\selectfont}
+
+% Author information
+\author{
+    Joar Heimonen\\
+    \texttt{contact@joar.me}
+}
+
+% Title configuration
+\title{
+    \textbf{Spark4pi-sensors}\\[0.5em]
+    \large Project Plan
+}
+\date{\today}
+
+\newcommand{\license}{
+    \vspace{1em}
+    \noindent\small{© 2024 Joar Heimonen\\
+    This work is licensed under a \href{https://creativecommons.org/licenses/by-sa/4.0/}{Creative Commons Attribution-Sharealike 4.0 International License}.}
+    \vspace{1em}
+}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+    \noindent Spark4pi-sensors is a hardware platform for analog, i2c and SPI sensors. 
+    This document describes the preliminary hardware schematic and the development plan for the Spark4pi-sensor platform. 
+    Spark4pi-sensors implements six rj45 sensor interfaces based on Sensirons reference implementation. 
+    Three different power busses are implemented. Groups of two sensors share one of the four available
+    power buses, each group also shares an i2c bus.
+\end{abstract}
+
+\pagebreak
+
+\tableofcontents
+
+\pagebreak
+
+
+\section{Introduction}
+When designing a sensor platform, universality is of the highest importance. This document will describe the preliminary implementation of Spark4pi-sensors and the development plan.
+Spark4pi-sensors is a hardware platform for analog, i2c and SPI sensors. The platform is designed to support a wide range of sensors powered by a wide range of voltages.
+The platform is designed to be rack mounted taking up one unit in a 19" rack. This platform is powered by a 12V power supply our trough PoE using the ethernet4pi-zero PoE hat.
+The platform will be controlled and configured through a NETCONF/YANG interface. 
+
+
+\section{Technical background}
+\subsection{Power Over Ethernet (PoE)}
+Power over Ethernet (PoE) is a technology that allows network cables to carry electrical power. 
+There are two standards for PoE, IEEE 802.3af and IEEE 802.3at. The ethernet4pi-zero PoE hat uses IEEE 802.3 af which 
+is the older standard and allows for a maximum power draw of 15.4w.
+
+\subsection{Ethernet4pi-zero PoE}
+The ethernet4pi-zero PoE is a PoE network shield in the late stages of development.
+The shield is designed to be used with the Raspberry Pi Zero and the Raspberry Pi Zero W.
+Ethernet4pi-zero PoE is built around a Lightside-Instruments powermod-54260 which delivers a maximum of five volts at three amps.
+This is equal to a maximum power draw of 15 watts which is the maximum power draw of the IEEE 802.3af standard.
+
+\subsection{Powermod-54260}
+The powermod-54260 is a DC to DC voltage regulator that can deliver a maximum of five volts at three amps.
+It works with an input voltage between 10 and 60 volts. The powermod-54260 is designed to be modular and
+can be placed on any project that requires a stable five-volt power supply.
+
+\subsection{RJ45}
+A RJ45 connector is a type of connector commonly used on Ethernet cables.
+
+\subsection{Sensirion RJ45 sensor interface}
+Sensirion uses the RJ45 connector to implement their proprietary sensor interface.
+This interface is designed to be used with their reference sensor implementations. Through 
+an adapter called the SEK-SensorBridge.
+
+\pagebreak
+\addcontentsline{toc}{section}{References}
+\printbibliography
+\license
+\end{document}

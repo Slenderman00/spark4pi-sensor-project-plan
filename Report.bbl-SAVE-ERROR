@@ -1,0 +1,381 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{DockerAcceleratedContainer2022}{misc}{}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Docker is a platform designed to help developers build, share, and run container applications. We handle the tedious setup, so you can focus on the code.}
+      \field{howpublished}{https://www.docker.com/}
+      \field{langid}{american}
+      \field{month}{5}
+      \field{shorttitle}{Docker}
+      \field{title}{Docker: {{Accelerated Container Application Development}}}
+      \field{urlday}{11}
+      \field{urlmonth}{12}
+      \field{urlyear}{2024}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/joar/Zotero/storage/82IWC585/www.docker.com.html
+      \endverb
+    \endentry
+    \entry{DomainNamesImplementation1987}{report}{}
+      \list{institution}{1}{%
+        {Internet Engineering Task Force}%
+      }
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This RFC is the revised specification of the protocol and format used in the implementation of the Domain Name System. It obsoletes RFC-883. This memo documents the details of the domain name client - server communication.}
+      \field{month}{11}
+      \field{number}{RFC 1035}
+      \field{title}{Domain Names - Implementation and Specification}
+      \field{type}{Request for {{Comments}}}
+      \field{urlday}{11}
+      \field{urlmonth}{12}
+      \field{urlyear}{2024}
+      \field{year}{1987}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.17487/RFC1035
+      \endverb
+      \verb{file}
+      \verb /home/joar/Zotero/storage/AWEJL66X/1987 - Domain names - implementation and specification.pdf
+      \endverb
+    \endentry
+    \entry{heimonenPeakDNS2024}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=6d975a8d6337c5d78bbffcd5535d1dbb}{%
+           family={Heimonen},
+           familyi={H\bibinitperiod},
+           given={Joar},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{6d975a8d6337c5d78bbffcd5535d1dbb}
+      \strng{fullhash}{6d975a8d6337c5d78bbffcd5535d1dbb}
+      \strng{bibnamehash}{6d975a8d6337c5d78bbffcd5535d1dbb}
+      \strng{authorbibnamehash}{6d975a8d6337c5d78bbffcd5535d1dbb}
+      \strng{authornamehash}{6d975a8d6337c5d78bbffcd5535d1dbb}
+      \strng{authorfullhash}{6d975a8d6337c5d78bbffcd5535d1dbb}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A fork of GoodDNS developed to operate as a kubernetes gateway}
+      \field{month}{12}
+      \field{title}{{{PeakDNS}}}
+      \field{urlday}{11}
+      \field{urlmonth}{12}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+    \endentry
+    \entry{hindenInternetProtocolVersion1998}{report}{}
+      \name{author}{2}{}{%
+        {{hash=15731384c9322099ff99912c4a4277a0}{%
+           family={Hinden},
+           familyi={H\bibinitperiod},
+           given={Bob},
+           giveni={B\bibinitperiod}}}%
+        {{hash=ca230329284d4fb0ed5c9512b6f01ae7}{%
+           family={Deering},
+           familyi={D\bibinitperiod},
+           given={Steve\bibnamedelima E.},
+           giveni={S\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Internet Engineering Task Force}%
+      }
+      \strng{namehash}{93588a36ead44bc15a5bda5a358cecf6}
+      \strng{fullhash}{93588a36ead44bc15a5bda5a358cecf6}
+      \strng{bibnamehash}{93588a36ead44bc15a5bda5a358cecf6}
+      \strng{authorbibnamehash}{93588a36ead44bc15a5bda5a358cecf6}
+      \strng{authornamehash}{93588a36ead44bc15a5bda5a358cecf6}
+      \strng{authorfullhash}{93588a36ead44bc15a5bda5a358cecf6}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This document specifies version 6 of the Internet Protocol (IPv6), also sometimes referred to as IP Next Generation or IPng. [STANDARDS-TRACK]}
+      \field{month}{12}
+      \field{number}{RFC 2460}
+      \field{title}{Internet {{Protocol}}, {{Version}} 6 ({{IPv6}}) {{Specification}}}
+      \field{type}{Request for {{Comments}}}
+      \field{urlday}{11}
+      \field{urlmonth}{12}
+      \field{urlyear}{2024}
+      \field{year}{1998}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.17487/RFC2460
+      \endverb
+      \verb{file}
+      \verb /home/joar/Zotero/storage/A85SBXP9/Hinden and Deering - 1998 - Internet Protocol, Version 6 (IPv6) Specification.pdf
+      \endverb
+    \endentry
+    \entry{hongDNSbasedLoadBalancing2006}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=452f1fc2a81688d8c5b5ba89c8b40e92}{%
+           family={Hong},
+           familyi={H\bibinitperiod},
+           given={Y.S.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=b69619e89267b827130480c29f29978e}{%
+           family={No},
+           familyi={N\bibinitperiod},
+           given={J.H.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=bd2ad20e5878667a37d960d3f31da518}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={S.Y.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{86d7fac7c76a08fcddf90139fa0c398e}
+      \strng{fullhash}{86d7fac7c76a08fcddf90139fa0c398e}
+      \strng{bibnamehash}{86d7fac7c76a08fcddf90139fa0c398e}
+      \strng{authorbibnamehash}{86d7fac7c76a08fcddf90139fa0c398e}
+      \strng{authornamehash}{86d7fac7c76a08fcddf90139fa0c398e}
+      \strng{authorfullhash}{86d7fac7c76a08fcddf90139fa0c398e}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A cluster Web-server system can be deployed to support high request rates to Web application server (WAS) in Internet-banking. The domain name system (DNS) servers dispatch the client requests among the Web-servers through the URL-name to IP-address mapping mechanism. In this paper, we propose a cluster Web-server system arranged in the multiple logical ring connections, in which the DNS is integrated with an adaptive load balancing algorithm and evaluate the performance of the proposed distributed Web-server system. We show the performance measurements for the proposed system}
+      \field{booktitle}{The {{Fourth IEEE Workshop}} on {{Software Technologies}} for {{Future Embedded}} and {{Ubiquitous Systems}}, and the {{Second International Workshop}} on {{Collaborative Computing}}, {{Integration}}, and {{Assurance}} ({{SEUS-WCCIA}}'06)}
+      \field{month}{4}
+      \field{title}{{{DNS-based}} Load Balancing in Distributed {{Web-server}} Systems}
+      \field{urlday}{13}
+      \field{urlmonth}{12}
+      \field{urlyear}{2024}
+      \field{year}{2006}
+      \field{urldateera}{ce}
+      \field{pages}{4 pp.-}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1109/SEUS-WCCIA.2006.23
+      \endverb
+      \verb{file}
+      \verb /home/joar/Zotero/storage/PLNVCMVC/1611743.html
+      \endverb
+      \keyw{Broadcasting,Clustering algorithms,Collaborative software,Conferences,Dispatching,Distributed Web-server system,DNS-based dispatcher.,Internet,Load balancing,Load management,Measurement,Scheduling,Web server,Web-server cluster}
+      \warn{\item Range field 'pages' in entry 'hongDNSbasedLoadBalancing2006' is malformed, falling back to literal}
+    \endentry
+    \entry{IPv6AddressAllocation}{misc}{}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labeltitlesource}{title}
+      \field{abstract}{ripe-738: IPv6 Address Allocation and Assignment Policy}
+      \field{howpublished}{https://www.ripe.net/publications/docs/ripe-738/}
+      \field{journaltitle}{RIPE Network Coordination Center}
+      \field{langid}{english}
+      \field{title}{{{IPv6 Address Allocation}} and {{Assignment Policy}}}
+      \field{urlday}{11}
+      \field{urlmonth}{12}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/joar/Zotero/storage/LD5WV3A2/ripe-738.html
+      \endverb
+    \endentry
+    \entry{jonesJSONWebToken2015}{report}{}
+      \name{author}{3}{}{%
+        {{hash=bfa19f15a98d15831cd377b8813e6672}{%
+           family={Jones},
+           familyi={J\bibinitperiod},
+           given={Michael\bibnamedelima B.},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=81e40ae87af997090fa9a9696e364c65}{%
+           family={Bradley},
+           familyi={B\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=34e6848475fd66697bfcb80787f2aef0}{%
+           family={Sakimura},
+           familyi={S\bibinitperiod},
+           given={Nat},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Internet Engineering Task Force}%
+      }
+      \strng{namehash}{8456e57585316c5ad570515143f00129}
+      \strng{fullhash}{8456e57585316c5ad570515143f00129}
+      \strng{bibnamehash}{8456e57585316c5ad570515143f00129}
+      \strng{authorbibnamehash}{8456e57585316c5ad570515143f00129}
+      \strng{authornamehash}{8456e57585316c5ad570515143f00129}
+      \strng{authorfullhash}{8456e57585316c5ad570515143f00129}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{JSON Web Token (JWT) is a compact, URL-safe means of representing claims to be transferred between two parties. The claims in a JWT are encoded as a JSON object that is used as the payload of a JSON Web Signature (JWS) structure or as the plaintext of a JSON Web Encryption (JWE) structure, enabling the claims to be digitally signed or integrity protected with a Message Authentication Code (MAC) and/or encrypted.}
+      \field{month}{5}
+      \field{number}{RFC 7519}
+      \field{title}{{{JSON Web Token}} ({{JWT}})}
+      \field{type}{Request for {{Comments}}}
+      \field{urlday}{14}
+      \field{urlmonth}{10}
+      \field{urlyear}{2024}
+      \field{year}{2015}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.17487/RFC7519
+      \endverb
+      \verb{file}
+      \verb /home/joar/Zotero/storage/AVECKBRY/Jones et al. - 2015 - JSON Web Token (JWT).pdf
+      \endverb
+    \endentry
+    \entry{moonDynamicLoadBalancing2005}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=ddde06d50f70cb3b725130fd7997f6ad}{%
+           family={Moon},
+           familyi={M\bibinitperiod},
+           given={Jong-Bae},
+           giveni={J\bibinithyphendelim B\bibinitperiod}}}%
+        {{hash=34839780eae3f263f38c76ff0f783fa5}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Myung-Ho},
+           giveni={M\bibinithyphendelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer, Berlin, Heidelberg}%
+      }
+      \strng{namehash}{765f57a3682f4f6508d5d4c4878ee451}
+      \strng{fullhash}{765f57a3682f4f6508d5d4c4878ee451}
+      \strng{bibnamehash}{765f57a3682f4f6508d5d4c4878ee451}
+      \strng{authorbibnamehash}{765f57a3682f4f6508d5d4c4878ee451}
+      \strng{authornamehash}{765f57a3682f4f6508d5d4c4878ee451}
+      \strng{authorfullhash}{765f57a3682f4f6508d5d4c4878ee451}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In most existing distributed Web systems, incoming requests are distributed to servers via Domain Name System (DNS). Although such systems are simple to implement, the address caching mechanism easily results in load unbalancing among servers. Moreover, modi.cation...}
+      \field{booktitle}{E-{{Commerce}} and {{Web Technologies}}}
+      \field{isbn}{978-3-540-31736-4}
+      \field{issn}{1611-3349}
+      \field{langid}{english}
+      \field{title}{Dynamic {{Load Balancing Method Based}} on {{DNS}} for {{Distributed Web Systems}}}
+      \field{urlday}{13}
+      \field{urlmonth}{12}
+      \field{urlyear}{2024}
+      \field{year}{2005}
+      \field{urldateera}{ce}
+      \field{pages}{238\bibrangedash 247}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1007/11545163_24
+      \endverb
+      \verb{file}
+      \verb /home/joar/Zotero/storage/XJEZ32MI/Moon and Kim - 2005 - Dynamic Load Balancing Method Based on DNS for Dis.pdf
+      \endverb
+    \endentry
+    \entry{ProductionGradeContainerOrchestration}{misc}{}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Kubernetes, also known as K8s, is an open source system for automating deployment, scaling, and management of containerized applications. It groups containers that make up an application into logical units for easy management and discovery. Kubernetes builds upon 15 years of experience of running production workloads at Google, combined with best-of-breed ideas and practices from the community. Planet Scale Designed on the same principles that allow Google to run billions of containers a week, Kubernetes can scale without increasing your operations team.}
+      \field{howpublished}{https://kubernetes.io/}
+      \field{journaltitle}{Kubernetes}
+      \field{langid}{english}
+      \field{title}{Production-{{Grade Container Orchestration}}}
+      \field{urlday}{11}
+      \field{urlmonth}{12}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/joar/Zotero/storage/8EJ26PEY/kubernetes.io.html
+      \endverb
+    \endentry
+    \entry{WelcomeRIPERIPE2024}{misc}{}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The RIPE NCC is one of five Regional Internet Registries (RIRs) providing Internet resource allocation and registration, and coordination activities.}
+      \field{howpublished}{https://www.ripe.net/}
+      \field{journaltitle}{RIPE Network Coordination Center}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{title}{Welcome to {{RIPE}} and the {{RIPE NCC}}}
+      \field{urlday}{11}
+      \field{urlmonth}{12}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/joar/Zotero/storage/GWUJ3CDM/www.ripe.net.html
+      \endverb
+    \endentry
+    \entry{xuLoadBalancingDNSbased2004}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=c63425016c82ca0d9c4c5449e01ae36a}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Zhong},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=a573ebfc66ebd362d3a5d03afce51cde}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Rong},
+           giveni={R\bibinitperiod}}}%
+        {{hash=1eeb88def5028aeb988920f42f19e06d}{%
+           family={Bhuyan},
+           familyi={B\bibinitperiod},
+           given={L.N.},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{6f5a54c9fe7786df233ac3ea7e50dd82}
+      \strng{fullhash}{6f5a54c9fe7786df233ac3ea7e50dd82}
+      \strng{bibnamehash}{6f5a54c9fe7786df233ac3ea7e50dd82}
+      \strng{authorbibnamehash}{6f5a54c9fe7786df233ac3ea7e50dd82}
+      \strng{authornamehash}{6f5a54c9fe7786df233ac3ea7e50dd82}
+      \strng{authorfullhash}{6f5a54c9fe7786df233ac3ea7e50dd82}
+      \field{sortinit}{X}
+      \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The explosion of WWW traffic has triggered great interest in distributed Web server systems. Among various distributed Web server architectures, the DNS-based distributed system is a promising solution in terms of performance, scalability and availability. DNS (domain name server) name caching has significant effects on the load balance of distributed Web server systems, due to the traffic skewness it causes. Also, there is page caching along whole paths between clients and Web servers, and page caching schemes could affect the system load balancing a lot. In this paper, we examine various caching issues, including the load balancing algorithms of the DNS, the locations of caches, and the page caching policies, for the DNS-based Web server system. We use stochastic processes to model the Web traffic, and compare the load balance performance of these algorithms and policies based on simulation results. We found that, the DNS load balancing algorithm, which takes into account both client domain information and server load information, could yield best load balance performance among various algorithms, and a server-side cache with the policy which only caches popular Web pages could significantly improve both the cache hit ratio and the load balance.}
+      \field{booktitle}{Proceedings. {{Tenth International Conference}} on {{Parallel}} and {{Distributed Systems}}, 2004. {{ICPADS}} 2004.}
+      \field{issn}{1521-9097}
+      \field{month}{7}
+      \field{title}{Load Balancing of {{DNS-based}} Distributed {{Web}} Server Systems with Page Caching}
+      \field{urlday}{13}
+      \field{urlmonth}{12}
+      \field{urlyear}{2024}
+      \field{year}{2004}
+      \field{urldateera}{ce}
+      \field{pages}{587\bibrangedash 594}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/ICPADS.2004.1316141
+      \endverb
+      \verb{file}
+      \verb /home/joar/Zotero/storage/8ETZDX8A/Xu et al. - 2004 - Load balancing of DNS-based distributed Web server.pdf;/home/joar/Zotero/storage/PXKT5HNQ/1316141.html
+      \endverb
+      \keyw{Availability,Explosions,Load management,Scalability,Service oriented architecture,Stochastic processes,Traffic control,Web pages,Web server,World Wide Web}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
