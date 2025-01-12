@@ -5,4 +5,12 @@
 \contentsline {subsection}{\numberline {2.3}Powermod-54260}{3}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}RJ45}{4}{subsection.2.4}%
 \contentsline {subsection}{\numberline {2.5}Sensirion RJ45 sensor interface}{4}{subsection.2.5}%
-\contentsline {section}{References}{5}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Hardware Design}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Schematic overview}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Power distribution}{5}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Sensor interfaces}{6}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Busses}{7}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}i2c bus}{7}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}SPI bus}{7}{subsubsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.5}Analog input}{7}{subsection.3.5}%
+\contentsline {section}{References}{8}{subsection.3.5}%

@@ -14,6 +14,7 @@
 \usepackage[breaklinks=true]{hyperref}
 \usepackage{xurl}
 \usepackage{tikz}
+\usepackage{lipsum}
 \usetikzlibrary{shapes.geometric,positioning,fit,backgrounds}
 \usepackage{./timing-diagrams}
 \usetikzlibrary{calc}
@@ -81,9 +82,9 @@
 \begin{abstract}
     \noindent Spark4pi-sensors is a hardware platform for analog, i2c and SPI sensors. 
     This document describes the preliminary hardware schematic and the development plan for the Spark4pi-sensor platform. 
-    Spark4pi-sensors implements six rj45 sensor interfaces based on Sensirons reference implementation. 
-    Three different power busses are implemented. Groups of two sensors share one of the four available
-    power buses, each group also shares an i2c bus.
+    Spark4pi-sensors implements six RJ45 sensor interfaces based on Sensirons reference implementation. 
+    Three different power rails are implemented. Groups of two sensors share one of the four available
+    power rails, each group also shares an i2c bus.
 \end{abstract}
 
 \pagebreak
@@ -124,6 +125,66 @@ A RJ45 connector is a type of connector commonly used on Ethernet cables.
 Sensirion uses the RJ45 connector to implement their proprietary sensor interface.
 This interface is designed to be used with their reference sensor implementations. Through 
 an adapter called the SEK-SensorBridge.
+
+\section{Hardware Design}
+\subsection{Schematic overview}
+\begin{figure}[H]
+    \begin{adjustwidth}{-1.5in}{-1in}
+        \centering
+        \includegraphics[width=\paperwidth]{spark4pi-sensors-1.png}
+        \caption{Preliminary schematic overview of the Spark4pi-sensors platform}
+    \end{adjustwidth}
+\end{figure}
+
+\subsection{Power distribution}
+The Spark4pi-sensors has five power rails for the sensors.
+\begin{itemize}
+    \item 5V
+    \item 3.3V
+    \item 2.5V
+    \item 1.8V
+    \item 1.2V
+\end{itemize}
+Each power rail except for the 5V is based on the LD1117 voltage regulator. This regulator can output a maximum of 1300mA. With each of 
+the Sensirion sensors drawing a maximum of 300 mA this is enough as long as all sensors are not drawing the maximum current from the same power rail.
+
+\subsection{Sensor interfaces}
+The Spark4pi-sensors platform has six RJ45 sensor interfaces. Each interface is based on the Sensirion reference implementation.
+Each interface consists of a RJ45 connector, a power management system, two level shifters, an i2c bus, an SPI bus and an analog input.
+The RJ45 connectors pin-out looks like this:
+\begin{itemize}
+    \item 1: GND
+    \item 2: SCK
+    \item 3: SCL
+    \item 4: MISO
+    \item 5: VDD / Chip select
+    \item 6: MOSI
+    \item 7: SDA
+    \item 8: Analog input
+\end{itemize}
+The same interface can implement an analog sensor and an i2c and SPI sensor. Due to the VDD ping also functioning as a chip select pin
+All SPI operations must be paused when reading from an interface the implements SPI.
+\subsection{Busses}
+The Spark4pi-sensors platform has four i2c busses and one SPI bus. Each i2c bus is shared between two sensors. The SPI bus is shared between all sensors.
+\subsubsection{i2c bus}
+To get four i2c busses we are multiplexing our Raspberry PI zero i2c0 bus. We achieve this by using the PCA9544APW i2c multiplexer.
+The PCA9544APW is a four-channel i2c multiplexer. It has a single i2c address and can be controlled by the Raspberry Pi.
+Here is an overview of the i2c busses:
+\begin{itemize}
+    \item i2c bus 0: Sensor 1 and Sensor 2
+    \item i2c bus 1: Sensor 3 and Sensor 4
+    \item i2c bus 2: Sensor 5 and Sensor 6
+    \item i2c bus 3: TCA9535DBR 18 channel IO expander and a MAX11614 eight channel ADC
+\end{itemize}
+Each of the three sensor i2c busses contains a level shifter that is used to shift the i2c from 3.3v to the sensor bus voltage (1.2v, 1.8v, 2.5v, 3.3v, 5v).
+\subsubsection{SPI bus}
+The Spark4pi-sensors platform has a single SPI bus that is shared between all sensors. This is the Raspberry Pi SPI bus.
+The SPI bus uses MOSFET's to enable the VDD pin on the sensors interface when a read or write operation is performed.
+When an interface is not in SPI mode the VDD pin will always be enabled.
+Each of the dual interface pairs has a level shifter that is used to shift the SPI bus from 3.3v to the sensor bus voltage (1.2v, 1.8v, 2.5v, 3.3v, 5v).
+\subsection{Analog input}
+The Spark4pi-sensors platform has six analog inputs. Each analog input is connected to a MAX11614 eight channel ADC.
+This ADC is connected to the Raspberry Pi through the i2c bus 3. The ADC is used to read the analog sensor connected to the RJ45 interface.
 
 \pagebreak
 \addcontentsline{toc}{section}{References}
