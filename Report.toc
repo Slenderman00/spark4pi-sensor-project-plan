@@ -21,4 +21,5 @@
 \contentsline {subsection}{\numberline {4.1}Phase 1}{9}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Phase 2}{9}{subsection.4.2}%
 \contentsline {subsection}{\numberline {4.3}Phase 3}{9}{subsection.4.3}%
-\contentsline {section}{References}{10}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Conclusion}{10}{subsection.4.4}%
+\contentsline {section}{References}{11}{subsection.4.4}%
