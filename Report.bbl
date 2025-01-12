@@ -16,5 +16,164 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{bjorklundYANG11Data2016}{report}{}
+      \name{author}{1}{}{%
+        {{hash=c302f0039be29440191c4cd1d1f41068}{%
+           family={Björklund},
+           familyi={B\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Internet Engineering Task Force}%
+      }
+      \strng{namehash}{c302f0039be29440191c4cd1d1f41068}
+      \strng{fullhash}{c302f0039be29440191c4cd1d1f41068}
+      \strng{bibnamehash}{c302f0039be29440191c4cd1d1f41068}
+      \strng{authorbibnamehash}{c302f0039be29440191c4cd1d1f41068}
+      \strng{authornamehash}{c302f0039be29440191c4cd1d1f41068}
+      \strng{authorfullhash}{c302f0039be29440191c4cd1d1f41068}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{YANG is a data modeling language used to model configuration data, state data, Remote Procedure Calls, and notifications for network management protocols. This document describes the syntax and semantics of version 1.1 of the YANG language. YANG version 1.1 is a maintenance release of the YANG language, addressing ambiguities and defects in the original specification. There are a small number of backward incompatibilities from YANG version 1. This document also specifies the YANG mappings to the Network Configuration Protocol (NETCONF).}
+      \field{month}{8}
+      \field{number}{RFC 7950}
+      \field{title}{The {{YANG}} 1.1 {{Data Modeling Language}}}
+      \field{type}{Request for {{Comments}}}
+      \field{urlday}{12}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{year}{2016}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.17487/RFC7950
+      \endverb
+      \verb{file}
+      \verb /home/joar/Zotero/storage/ETXZSGR3/Björklund - 2016 - The YANG 1.1 Data Modeling Language.pdf
+      \endverb
+    \endentry
+    \entry{ennsNetworkConfigurationProtocol2011}{report}{}
+      \name{author}{4}{}{%
+        {{hash=da36e0d45377c4622881ca0d8e96b0d5}{%
+           family={Enns},
+           familyi={E\bibinitperiod},
+           given={Rob},
+           giveni={R\bibinitperiod}}}%
+        {{hash=c302f0039be29440191c4cd1d1f41068}{%
+           family={Björklund},
+           familyi={B\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=49997ddeb464bd92dc3c6e9f70600468}{%
+           family={Bierman},
+           familyi={B\bibinitperiod},
+           given={Andy},
+           giveni={A\bibinitperiod}}}%
+        {{hash=bad6a638af87ad83706ef8ae8b7a1947}{%
+           family={Schönwälder},
+           familyi={S\bibinitperiod},
+           given={Jürgen},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Internet Engineering Task Force}%
+      }
+      \strng{namehash}{26a1ea6d36d3e0556e0ee9d52cf2a7e5}
+      \strng{fullhash}{8a755f33f1e50bb75d27e37baa15ccf7}
+      \strng{bibnamehash}{26a1ea6d36d3e0556e0ee9d52cf2a7e5}
+      \strng{authorbibnamehash}{26a1ea6d36d3e0556e0ee9d52cf2a7e5}
+      \strng{authornamehash}{26a1ea6d36d3e0556e0ee9d52cf2a7e5}
+      \strng{authorfullhash}{8a755f33f1e50bb75d27e37baa15ccf7}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Network Configuration Protocol (NETCONF) defined in this document provides mechanisms to install, manipulate, and delete the configuration of network devices. It uses an Extensible Markup Language (XML)-based data encoding for the configuration data as well as the protocol messages. The NETCONF protocol operations are realized as remote procedure calls (RPCs). This document obsoletes RFC 4741. [STANDARDS-TRACK]}
+      \field{month}{6}
+      \field{number}{RFC 6241}
+      \field{title}{Network {{Configuration Protocol}} ({{NETCONF}})}
+      \field{type}{Request for {{Comments}}}
+      \field{urlday}{12}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{year}{2011}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.17487/RFC6241
+      \endverb
+      \verb{file}
+      \verb /home/joar/Zotero/storage/VI5ABVJG/Enns et al. - 2011 - Network Configuration Protocol (NETCONF).pdf
+      \endverb
+    \endentry
+    \entry{foundationTeachLearnMake2025}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=03eb7fa9a11a8c6d79113b8a4ace0c93}{%
+           family={Foundation},
+           familyi={F\bibinitperiod},
+           given={Raspberry\bibnamedelima Pi},
+           giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{03eb7fa9a11a8c6d79113b8a4ace0c93}
+      \strng{fullhash}{03eb7fa9a11a8c6d79113b8a4ace0c93}
+      \strng{bibnamehash}{03eb7fa9a11a8c6d79113b8a4ace0c93}
+      \strng{authorbibnamehash}{03eb7fa9a11a8c6d79113b8a4ace0c93}
+      \strng{authornamehash}{03eb7fa9a11a8c6d79113b8a4ace0c93}
+      \strng{authorfullhash}{03eb7fa9a11a8c6d79113b8a4ace0c93}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We are a charity with the mission to enable young people to realise their full potential through the power of computing and digital technologies.}
+      \field{howpublished}{https://www.raspberrypi.org/}
+      \field{journaltitle}{Raspberry Pi Foundation}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{title}{Teach, Learn, and Make with the {{Raspberry Pi Foundation}}}
+      \field{urlday}{12}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/joar/Zotero/storage/XIZQI6YE/www.raspberrypi.org.html
+      \endverb
+    \endentry
+    \entry{IEEEStandardsAssociation}{misc}{}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{https://standards.ieee.org/ieee/802.3af/1090/}
+      \field{journaltitle}{IEEE Standards Association}
+      \field{langid}{english}
+      \field{title}{{{IEEE Standards Association}}}
+      \field{urlday}{12}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/joar/Zotero/storage/X7ZSKWNC/1090.html
+      \endverb
+    \endentry
+    \entry{TPS54260DataSheet}{misc}{}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{https://www.ti.com/product/TPS54260}
+      \field{title}{{{TPS54260}} Data Sheet, Product Information and Support {|} {{TI}}.Com}
+      \field{urlday}{12}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/joar/Zotero/storage/N9FJ3VHF/TPS54260.html
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 

@@ -104,8 +104,12 @@ The platform will be controlled and configured through a NETCONF/YANG interface.
 \section{Technical background}
 \subsection{Power Over Ethernet (PoE)}
 Power over Ethernet (PoE) is a technology that allows network cables to carry electrical power. 
-There are two standards for PoE, IEEE 802.3af and IEEE 802.3at. The ethernet4pi-zero PoE hat uses IEEE 802.3 af which 
+There are two standards for PoE, IEEE 802.3af and IEEE 802.3at \cite{IEEEStandardsAssociation}. The ethernet4pi-zero PoE hat uses IEEE 802.3af which 
 is the older standard and allows for a maximum power draw of 15.4w.
+
+\subsection{Raspberry Pi Zero}
+The Raspberry Pi Zero is a single board computer developed by the Raspberry Pi Foundation \cite{foundationTeachLearnMake2025}. 
+The Raspberry Pi Zero is the smallest and cheapest Raspberry Pi.
 
 \subsection{Ethernet4pi-zero PoE}
 The ethernet4pi-zero PoE is a PoE network shield in the late stages of development.
@@ -116,7 +120,8 @@ This is equal to a maximum power draw of 15 watts which is the maximum power dra
 \subsection{Powermod-54260}
 The powermod-54260 is a DC to DC voltage regulator that can deliver a maximum of five volts at three amps.
 It works with an input voltage between 10 and 60 volts. The powermod-54260 is designed to be modular and
-can be placed on any project that requires a stable five-volt power supply.
+can be placed on any project that requires a stable five-volt power supply. It is based on the Texas Instruments TPS54260 \cite{TPS54260DataSheet}.
+
 
 \subsection{RJ45}
 A RJ45 connector is a type of connector commonly used on Ethernet cables.
@@ -125,6 +130,14 @@ A RJ45 connector is a type of connector commonly used on Ethernet cables.
 Sensirion uses the RJ45 connector to implement their proprietary sensor interface.
 This interface is designed to be used with their reference sensor implementations. Through 
 an adapter called the SEK-SensorBridge.
+
+\subsection{YANG}
+YANG is a data modeling language, similar to XML. It is used to model and configure the state of network controlled devices \cite{bjorklundYANG11Data2016}
+YANG implements a hierarchical model of what the device can do. Unlike SNMP this model is fetched from the device.
+
+\subsection{NETCONF}
+NETCONF is a protocol that is used to configure and monitor network devices. It uses the YANG data modeling language to describe the configuration and state of network devices.
+NETCONF can be implemented over any protocol but is usually implemented over SSH \cite{ennsNetworkConfigurationProtocol2011}.
 
 \section{Hardware Design}
 \subsection{Schematic overview}
@@ -185,6 +198,42 @@ Each of the dual interface pairs has a level shifter that is used to shift the S
 \subsection{Analog input}
 The Spark4pi-sensors platform has six analog inputs. Each analog input is connected to a MAX11614 eight channel ADC.
 This ADC is connected to the Raspberry Pi through the i2c bus 3. The ADC is used to read the analog sensor connected to the RJ45 interface.
+\subsection{Enclosure}
+The Spark4pi-sensors platform is designed to be rack-mounted. The platform takes up one unit in a 19" rack.
+For illustration purposes, we have included an image of the spark-v2 kit as our enclosure will be similar to this.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{enclosure.png}
+    \caption{Spark-v2 kit}
+\end{figure}
+
+\section{Development plan}
+The development of this project will be divided into three phases.
+\subsection{Phase 1}
+\begin{itemize}
+    \item Finalize the schematic
+    \item Order the PCB's
+    \item Debug the PCB's
+    \item Repeat until the PCB's are working
+\end{itemize}
+Whilst waiting for the finalization of the PCB's other members of the team will
+work on getting up to speed with the NETCONF/YANG interface, designing the 
+YANG model, Auditing our codebase and setting up a build server
+\subsection{Phase 2}
+\begin{itemize}
+    \item Develop an API for controlling the Spark4pi-sensors platform
+    \item Develop a YANG model for the Spark4pi-sensors platform
+    \item Develop a NETCONF server module for the Spark4pi-sensors platform
+\end{itemize}
+\subsection{Phase 3}
+\begin{itemize}
+    \item Create an enclosure for the Spark4pi-sensors platform
+    \item Develop a web based platform for controlling YANG and NETCONF based devices
+    \item Apply for the open source hardware association certification
+\end{itemize}
+Keeping in mind that not all our team members are hardware engineers or software engineers, the rest of the team will be 
+free to work on E-buisness related tasks like contacting Sensirion and other sensors manufacturers in hopes of collaborating.
+We will also need to draft articles describing the sensors interface as Sensirions implementation is proprietary.
 
 \pagebreak
 \addcontentsline{toc}{section}{References}
