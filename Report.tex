@@ -15,6 +15,9 @@
 \usepackage{xurl}
 \usepackage{tikz}
 \usepackage{lipsum}
+\usepackage[format=plain,
+            labelfont=it,
+            textfont=]{caption}
 \usetikzlibrary{shapes.geometric,positioning,fit,backgrounds}
 \usepackage{./timing-diagrams}
 \usetikzlibrary{calc}
@@ -176,6 +179,7 @@ leveraged in numerous ways.
 \begin{figure}[H]
     \includegraphics[width=\textwidth]{schematic.png}
     \caption{Preliminary schematic overview of the Spark4pi-sensors platform 0.02}
+    \label{fig:schematic}
 \end{figure}
 
 
@@ -183,7 +187,7 @@ leveraged in numerous ways.
 The ice4pi-spark-6x-sfp is a 6x10 pin Field Programmable Gate Array (FPGA) designed by Lightside Instruments AS.
 This FPGA will provide the six I2C buses required by the Spark4pi-sensors platform. 
 The ice4pi-spark-6x-sfp will communicate with the Raspberry Pi through an SPI interface.
-Th
+This can be seen in the schematic in \textit{figure \ref{fig:schematic}}.
 
 
 \pagebreak
