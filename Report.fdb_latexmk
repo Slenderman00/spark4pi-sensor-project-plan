@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber Report"] 1736817073.55338 "Report.bcf" "Report.bbl" "Report" 1736817980.76623 0
+["biber Report"] 1736818125.36285 "Report.bcf" "Report.bbl" "Report" 1736818196.23634 0
   "Library.bib" 1736817067.7788 37058 e978d9dcfd23f4575233c3fcdb03c755 ""
-  "Report.bcf" 1736817980.72345 108349 76861587bd5eb96d13103156a8082401 "pdflatex"
+  "Report.bcf" 1736818196.19482 108349 76861587bd5eb96d13103156a8082401 "pdflatex"
   (generated)
   "Report.bbl"
   "Report.blg"
   (rewritten before read)
-["pdflatex"] 1736817980.18404 "/home/joar/Documents/spark4pi-sensor-project-plan/Report.tex" "Report.pdf" "Report" 1736817980.7664 0
-  "/home/joar/Documents/spark4pi-sensor-project-plan/Report.tex" 1736817979.96342 7445 1ea775feefd540488a78893b89ce3c82 ""
+["pdflatex"] 1736818195.65535 "/home/joar/Documents/spark4pi-sensor-project-plan/Report.tex" "Report.pdf" "Report" 1736818196.23651 0
+  "/home/joar/Documents/spark4pi-sensor-project-plan/Report.tex" 1736818195.45146 7466 6dfddf7730a7ffc07676590b390ecb28 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1736268207 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1736268207 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm" 1736268207 1536 02c06700a42be0f5a28664c7273f82e7 ""
@@ -27,6 +27,7 @@
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1736268207 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1736268207 1120 8b7d695260f3cff42e636090a8002094 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmti12.tfm" 1736268207 1484 ed72f8f5cf654cda15ecc8e32bfcbee5 ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmti8.tfm" 1736268207 1504 1747189e0441d1c18f3ea56fafc1c480 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm" 1736268207 772 9a936b7f5e2ff0557fce0f62822f0bbf ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1736268207 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1736268207 32080 340ef9bf63678554ee606688e7b5339d ""
@@ -34,6 +35,7 @@
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1736268207 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1736268207 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1736268207 36118 fad905eba93cff5bce1e185fe980a177 ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb" 1736268207 35660 fb24af7afbadb71801619f1415838111 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb" 1736268207 24252 1e4e051947e12dfb50fee0b7f4e26e3a ""
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb" 1736268207 145929 f25e56369a345c4ff583b067cd87ce8e ""
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb" 1736268207 136101 f533469f523533d38317ab5729d00c8a ""
@@ -191,12 +193,12 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1736268207 41588 b43d3e860a4f94167ee1e725ff526a72 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1736385653.56601 5318467 8236939515598d005dfbcc2e1a40f206 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1736385646 7113022 0e3b556cb559c892beb7017afe3f3634 ""
-  "Report.aux" 1736817980.72011 3454 a7ef6d74076b12b6e512cea459305b30 "pdflatex"
-  "Report.bbl" 1736817073.93577 10057 16915538e6dd7544bbf7326f62c9d89b "biber Report"
-  "Report.out" 1736817980.72011 1821 48f1b48d488a54e2f424234acc803afc "pdflatex"
-  "Report.run.xml" 1736817980.72345 2316 8d7d9411c1fbade0916415c590e8f121 "pdflatex"
-  "Report.tex" 1736817979.96342 7445 1ea775feefd540488a78893b89ce3c82 ""
-  "Report.toc" 1736817980.72345 1135 14b316048a90a09c685c16bf38939470 "pdflatex"
+  "Report.aux" 1736818196.19482 3454 a7ef6d74076b12b6e512cea459305b30 "pdflatex"
+  "Report.bbl" 1736818125.81554 10057 16915538e6dd7544bbf7326f62c9d89b "biber Report"
+  "Report.out" 1736818196.19482 1821 48f1b48d488a54e2f424234acc803afc "pdflatex"
+  "Report.run.xml" 1736818196.19482 2316 8d7d9411c1fbade0916415c590e8f121 "pdflatex"
+  "Report.tex" 1736818195.45146 7466 6dfddf7730a7ffc07676590b390ecb28 ""
+  "Report.toc" 1736818196.19482 1135 14b316048a90a09c685c16bf38939470 "pdflatex"
   "timing-diagrams.sty" 1736637152.44091 7405 6ef335de3f7846990cbf642444919ab6 ""
   (generated)
   "Report.aux"
