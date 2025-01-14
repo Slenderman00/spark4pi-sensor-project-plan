@@ -101,7 +101,7 @@ When designing a sensor platform, universality is of the highest importance. Thi
 Spark4pi-sensors is a hardware platform for I2C sensors.
 The sensor platform is designed to be rack mounted taking up one unit in a 19" rack. This platform is powered by a 10-60V power supply or trough PoE using the ethernet4pi-zero PoE hat.
 The platform will be controlled and configured through a NETCONF/YANG interface, this will allow it to scale easily making the sensor network size agnostic.
-The platform will be built around an ICE40 FPGA and a Raspberry Pi Zero. All logic will be powered by a 3.3V power line regulated from the main 5V power line.
+The platform will be built around an Ice4pi FPGA and a Raspberry Pi Zero. All logic will be powered by a 3.3V power line regulated from the main 5V power line.
 Spark4pi-sensors is designed with Sensirion sensors in mind, but there is no technical reason why other sensors can't be used.
 
 
@@ -148,6 +148,12 @@ I2C is a two wire bus protocol used to communicate between devices. Each device 
 Only one device can communicate on the bus at a time. The I2C bus is a master slave bus, the master controls the bus and the slaves respond to the master.
 I2C stands for Inter-Integrated Circuit and was developed by Philips in 1982, now known as NXP \cite{I2CbusSpecificationUser2021}.
 
+\subsection{Field Programmable Gate Array (FPGA)}
+A field programmable gate array is a hardware language defined integrated circuit \cite{FieldprogrammableGateArray2025}. 
+Much like a microcontroller an FPGA is programmed. FPGA's are programmed using a hardware description language like VHDL or Verilog.
+The difference between an FPGA and a microcontroller is that when an FPGA is programmed we are defining 
+the states of the field gates and the connections between them. This makes an FPGA much more flexible than a microcontroller.
+
 \section{Design}
 \subsection{Philosophy}
 We believe that simplicity is the key to robust systems, the Spark4pi-sensors platform is designed following this simple philosophy based on the 
@@ -166,7 +172,21 @@ Through this simple philosophy Lightside Instruments AS has created an ecosystem
 leveraged in numerous ways.
 
 \subsection{Schematic}
-\writersnote{The schematic is not completed yet, but it will follow.}
+% \writersnote{The schematic is not completed yet, but it will follow.}
+\begin{figure}[H]
+    \begin{adjustwidth}{-1.5in}{-1in}
+        \centering
+        \includegraphics[width=\paperwidth]{schematic.png}
+        \caption{Preliminary schematic overview of the Spark4pi-sensors platform 0.02}
+    \end{adjustwidth}
+\end{figure}
+
+
+\subsection{Ice4pi FPGA}
+The ice4pi-spark-6x-sfp is a 6x10 pin Field Programmable Gate Array (FPGA) designed by Lightside Instruments AS.
+This FPGA will provide the six I2C buses required by the Spark4pi-sensors platform. 
+The ice4pi-spark-6x-sfp will communicate with the Raspberry Pi through an SPI interface.
+Th
 
 
 \pagebreak
