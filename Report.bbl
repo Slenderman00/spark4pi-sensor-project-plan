@@ -19,6 +19,37 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{agSEKSensorBridgeConnectingBridgeTwo}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=4947ae23e2e80a5e01a91a60a7830cda}{%
+           family={AG},
+           familyi={A\bibinitperiod},
+           given={Sensirion},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{4947ae23e2e80a5e01a91a60a7830cda}
+      \strng{fullhash}{4947ae23e2e80a5e01a91a60a7830cda}
+      \strng{bibnamehash}{4947ae23e2e80a5e01a91a60a7830cda}
+      \strng{authorbibnamehash}{4947ae23e2e80a5e01a91a60a7830cda}
+      \strng{authornamehash}{4947ae23e2e80a5e01a91a60a7830cda}
+      \strng{authorfullhash}{4947ae23e2e80a5e01a91a60a7830cda}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{- Connect two sensors to one SEK-SensorBridge and evaluate simultaneously - 1.2 V to 5.5 V selectable supply - Power supply up to 250 mA at 5 V Includes: - 1x SEK-SensorBridge - 1x USB connector cable}
+      \field{howpublished}{https://sensirion.com/products/catalog/SEK-SensorBridge}
+      \field{journaltitle}{Sensirion AG}
+      \field{langid}{english}
+      \field{title}{{{SEK-SensorBridge-Connecting}} Bridge with Two Sensor Ports}
+      \field{urlday}{14}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/joar/Zotero/storage/AEXP7E8T/SEK-SensorBridge.html
+      \endverb
+    \endentry
     \entry{BasicsUnixPhilosophy}{misc}{}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
