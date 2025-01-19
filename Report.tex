@@ -63,14 +63,17 @@
 
 % Author information
 \author{
-    Joar Heimonen\\
-    \texttt{contact@joar.me}
+    Group Number: None has been assigned yet\\
+    Joar Heimonen, Christian Vu, Naly Keli \\
+    \texttt{contact@joar.me}\\ 
+    \texttt{chvu002@student.kristiania.no}\\
+    \texttt{nake002@student.kristiania.no}
 }
 
 % Title configuration
 \title{
     \textbf{Spark4pi-sensors}\\[0.5em]
-    \large Project Plan
+    \large Project description
 }
 \date{\today}
 
@@ -78,20 +81,9 @@
     \vspace{1em}
     \noindent\small{© 2024 Joar Heimonen\\
     This work is licensed under a \href{https://creativecommons.org/licenses/by-sa/4.0/}{Creative Commons Attribution-Sharealike 4.0 International License}.}
-    \vspace{1em}
 }
-
 \begin{document}
 \maketitle
-
-\begin{abstract}
-    \noindent Spark4pi-sensors is a hardware platform for I2C sensors. It is designed to be scalable utilizing the NETCONF protocol and YANG data models for configuration.
-    The platform is designed to be rack mounted taking up one unit in a 19-inch rack. The platform can be powered by one of two methods, a 10-60V power line or through an
-    ethernet4pi-zero PoE hat. The platform uses an ICE40 FPGA to establish six different I2C buses, each dedicated to an interface. This makes the platform both performant and easy to integrate.
-    The FPGA communicates with a Raspberry Pi Zero which runs the NETCONF server.
-
-\end{abstract}
-
 \pagebreak
 
 \tableofcontents
@@ -100,13 +92,9 @@
 
 
 \section{Introduction}
-When designing a sensor platform, universality is of the highest importance. This document will describe the preliminary design of Spark4pi-sensors and the development plan.
-Spark4pi-sensors is a hardware platform for I2C sensors.
-The sensor platform is designed to be rack mounted taking up one unit in a 19" rack. This platform is powered by a 10-60V power supply or trough PoE using the ethernet4pi-zero PoE hat.
-The platform will be controlled and configured through a NETCONF/YANG interface, this will allow it to scale easily making the sensor network size agnostic.
-The platform will be built around an Ice4pi FPGA and a Raspberry Pi Zero. All logic will be powered by a 3.3V power line regulated from the main 5V power line.
-Spark4pi-sensors is designed with Sensirion sensors in mind, but there is no technical reason why other sensors can't be used.
-
+This document will cover the software and hardware implementation of the Spark4pi-sensors shield, with an emphasis
+on software. The Spark4pi-sensors is a shield developed by Lightside-Instruments for the deployment and testing of arbitrary I2C sensors.
+The system is designed to be scalable and reliable through YANG datamodels and the NETCONF protocol.
 
 \section{Technical background}
 \subsection{Power Over Ethernet (PoE)}
@@ -158,7 +146,8 @@ The difference between an FPGA and a microcontroller is that when an FPGA is pro
 the states of the field gates and the connections between them. This makes an FPGA much more flexible than a microcontroller.
 
 \section{Design}
-\subsection{Philosophy}
+\subsection{Hardware}
+\subsubsection{Philosophy}
 We believe that simplicity is the key to robust systems, the Spark4pi-sensors platform is designed following this simple philosophy based on the 
 Unix philosophy which favors modularity over monolithic design \cite{BasicsUnixPhilosophy}.
 Each of Lightside Instruments AS products must therefor meet the following criteria:
@@ -174,21 +163,28 @@ created a design that meets these criteria.
 Through this simple philosophy Lightside Instruments AS has created an ecosystem of interoperating products that can be
 leveraged in numerous ways.
 
-\subsection{Schematic}
-% \writersnote{The schematic is not completed yet, but it will follow.}
-\begin{figure}[H]
-    \includegraphics[width=\textwidth]{schematic.png}
-    \caption{Preliminary schematic overview of the Spark4pi-sensors platform 0.02}
-    \label{fig:schematic}
-\end{figure}
-
-
-\subsection{Ice4pi FPGA}
-The ice4pi-spark-6x-sfp is a 6x10 pin Field Programmable Gate Array (FPGA) designed by Lightside Instruments AS.
+\subsubsection{Ice4pi FPGA}
+The ice4pi is a Field Programmable Gate Array (FPGA) shield designed by Lightside Instruments AS.
 This FPGA will provide the six I2C buses required by the Spark4pi-sensors platform. 
-The ice4pi-spark-6x-sfp will communicate with the Raspberry Pi through an SPI interface.
-This can be seen in the schematic in \textit{figure \ref{fig:schematic}}.
+The ice4pi will communicate with the Raspberry Pi through an SPI interface.
 
+\subsection{Software}
+\subsubsection{YANG}
+A YANG model will be developed for sensors, We will also consider the viability of using existing models that implement support for sensors.
+The model must support the following:
+\begin{itemize}
+  \item An infinite ammount of sensors.
+  \item Arbitraty model defined sensors.
+  \item Predefined common sensors.
+\end{itemize}
+
+\subsubsection{NETCONF}
+A NETCONF module will be developed using C and Python. This module will support an arbitrary ammount of sensors,
+making it hardware agnostic.
+
+\subsubsection{Grafana}
+A NETCONF plugin will be developed for Grafana. This plugin will prompt NETCONF endpoints at a regular interval and store it in a timeseries database.
+This will make the data searchable trough XPATH.
 
 \pagebreak
 \addcontentsline{toc}{section}{References}
