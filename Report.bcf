@@ -2368,7 +2368,11 @@
     <bcf:citekey order="5" intorder="1">bjorklundYANG11Data2016</bcf:citekey>
     <bcf:citekey order="6" intorder="1">ennsNetworkConfigurationProtocol2011</bcf:citekey>
     <bcf:citekey order="7" intorder="1">I2CbusSpecificationUser2021</bcf:citekey>
-    <bcf:citekey order="8" intorder="1">BasicsUnixPhilosophy</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">FieldprogrammableGateArray2025</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">XPathMDN2024</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">GrafanaOpenComposable</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">LightsideInstrumentsYANG</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">BasicsUnixPhilosophy</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

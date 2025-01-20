@@ -155,6 +155,25 @@
       \verb /home/joar/Zotero/storage/VI5ABVJG/Enns et al. - 2011 - Network Configuration Protocol (NETCONF).pdf
       \endverb
     \endentry
+    \entry{FieldprogrammableGateArray2025}{article}{}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A field-programmable gate array (FPGA) is a type of configurable integrated circuit that can be repeatedly programmed after manufacturing. FPGAs are a subset of logic devices referred to as programmable logic devices (PLDs). They consist of an array of programmable logic blocks with a connecting grid, that can be configured "in the field" to interconnect with other logic blocks to perform various digital functions. FPGAs are often used in limited (low) quantity production of custom-made products, and in research and development, where the higher cost of individual FPGAs is not as important, and where creating and manufacturing a custom circuit wouldn't be feasible. Other applications for FPGAs include the telecommunications, automotive, aerospace, and industrial sectors, which benefit from their flexibility, high signal processing speed, and parallel processing abilities. A FPGA configuration is generally written using a hardware description language (HDL) e.g. VHDL, similar to the ones used for application-specific integrated circuits (ASICs). Circuit diagrams were formerly used to write the configuration. The logic blocks of an FPGA can be configured to perform complex combinational functions, or act as simple logic gates like AND and XOR. In most FPGAs, logic blocks also include memory elements, which may be simple flip-flops or more sophisticated blocks of memory. Many FPGAs can be reprogrammed to implement different logic functions, allowing flexible reconfigurable computing as performed in computer software. FPGAs also have a role in embedded system development due to their capability to start system software development simultaneously with hardware, enable system performance simulations at a very early phase of the development, and allow various system trials and design iterations before finalizing the system architecture. FPGAs are also commonly used during the development of ASICs to speed up the simulation process.}
+      \field{annotation}{Page Version ID: 1266862002}
+      \field{journaltitle}{Wikipedia}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{title}{Field-Programmable Gate Array}
+      \field{urlday}{14}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/joar/Zotero/storage/75G5VKHM/Field-programmable_gate_array.html
+      \endverb
+    \endentry
     \entry{foundationTeachLearnMake2025}{misc}{}
       \name{author}{1}{}{%
         {{hash=03eb7fa9a11a8c6d79113b8a4ace0c93}{%
@@ -188,6 +207,24 @@
       \verb /home/joar/Zotero/storage/XIZQI6YE/www.raspberrypi.org.html
       \endverb
     \endentry
+    \entry{GrafanaOpenComposable}{misc}{}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Grafana is the open source analytics \& monitoring solution for every database.}
+      \field{howpublished}{https://grafana.com/}
+      \field{journaltitle}{Grafana Labs}
+      \field{langid}{english}
+      \field{shorttitle}{Grafana}
+      \field{title}{Grafana: {{The}} Open and Composable Observability Platform}
+      \field{urlday}{20}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/joar/Zotero/storage/8XFBBPH8/grafana.com.html
+      \endverb
+    \endentry
     \entry{I2CbusSpecificationUser2021}{article}{}
       \field{sortinit}{I}
       \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
@@ -216,6 +253,20 @@
       \verb /home/joar/Zotero/storage/X7ZSKWNC/1090.html
       \endverb
     \endentry
+    \entry{LightsideInstrumentsYANG}{misc}{}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labeltitlesource}{title}
+      \field{langid}{american}
+      \field{title}{Lightside {{Instruments AS}} -- {{YANG}} Model Network Managed Instruments}
+      \field{urlday}{20}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/joar/Zotero/storage/IIVUNR6V/lightside-instruments.com.html
+      \endverb
+    \endentry
     \entry{TPS54260DataSheet}{misc}{}
       \field{sortinit}{T}
       \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
@@ -228,6 +279,24 @@
       \field{urldateera}{ce}
       \verb{file}
       \verb /home/joar/Zotero/storage/N9FJ3VHF/TPS54260.html
+      \endverb
+    \endentry
+    \entry{XPathMDN2024}{misc}{}
+      \field{sortinit}{X}
+      \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
+      \field{labeltitlesource}{title}
+      \field{abstract}{XPath stands for XML Path Language. It uses a non-XML syntax to provide a flexible way of addressing (pointing to) different parts of an XML document. It can also be used to test addressed nodes within a document to determine whether they match a pattern or not.}
+      \field{howpublished}{https://developer.mozilla.org/en-US/docs/Web/XPath}
+      \field{langid}{american}
+      \field{month}{9}
+      \field{title}{{{XPath}} {|} {{MDN}}}
+      \field{urlday}{20}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/joar/Zotero/storage/D7SDBUQV/XPath.html
       \endverb
     \endentry
   \enddatalist

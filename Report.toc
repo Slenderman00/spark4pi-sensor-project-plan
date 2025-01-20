@@ -3,13 +3,24 @@
 \contentsline {subsection}{\numberline {2.1}Power Over Ethernet (PoE)}{3}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Raspberry Pi Zero}{3}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Ethernet4pi-zero PoE}{3}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Powermod-tps54260}{4}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.4}Powermod-tps54260}{3}{subsection.2.4}%
 \contentsline {subsection}{\numberline {2.5}RJ45}{4}{subsection.2.5}%
 \contentsline {subsection}{\numberline {2.6}Sensirion RJ45 sensor interface}{4}{subsection.2.6}%
 \contentsline {subsection}{\numberline {2.7}YANG}{4}{subsection.2.7}%
 \contentsline {subsection}{\numberline {2.8}NETCONF}{4}{subsection.2.8}%
 \contentsline {subsection}{\numberline {2.9}I2C}{4}{subsection.2.9}%
-\contentsline {section}{\numberline {3}Design}{5}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Philosophy}{5}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Schematic}{5}{subsection.3.2}%
-\contentsline {section}{References}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {2.10}Field Programmable Gate Array (FPGA)}{4}{subsection.2.10}%
+\contentsline {subsection}{\numberline {2.11}XPath}{5}{subsection.2.11}%
+\contentsline {subsection}{\numberline {2.12}Grafana}{5}{subsection.2.12}%
+\contentsline {section}{\numberline {3}Lightside Instruments}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Use Case}{5}{subsection.3.1}%
+\contentsline {section}{\numberline {4}Design}{5}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Hardware}{5}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Philosophy}{5}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Ice4pi FPGA}{6}{subsubsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.2}Software}{6}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}YANG}{6}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}NETCONF}{6}{subsubsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.3}Grafana}{7}{subsubsection.4.2.3}%
+\contentsline {section}{\numberline {5}Summary}{7}{section.5}%
+\contentsline {section}{References}{8}{section.5}%
