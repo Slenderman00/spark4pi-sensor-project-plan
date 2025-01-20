@@ -63,7 +63,7 @@
 
 % Author information
 \author{
-    Group Number: None has been assigned yet\\
+    Group Number: 107\\
     Joar Heimonen, Christian Vu, Naly Keli \\
     \texttt{contact@joar.me}\\ 
     \texttt{chvu002@student.kristiania.no}\\
@@ -99,7 +99,8 @@ The system is designed to be scalable and reliable through YANG datamodels and t
 \section{Technical background}
 \subsection{Power Over Ethernet (PoE)}
 Power over Ethernet (PoE) is a technology that allows network cables to carry electrical power. 
-There are two standards for PoE, IEEE 802.3af and IEEE 802.3at \cite{IEEEStandardsAssociation}. The ethernet4pi-zero PoE hat uses IEEE 802.3af which 
+There are two standards for PoE, IEEE 802.3af and IEEE 802.3at \cite{IEEEStandardsAssociation}. 
+The ethernet4pi-zero PoE hat uses IEEE 802.3af which 
 is the older standard and allows for a maximum power draw of 15.4w.
 
 \subsection{Raspberry Pi Zero}
@@ -116,7 +117,6 @@ This is equal to a maximum power draw of 15 watts which is the maximum power dra
 The powermod-tps54260 is a DC to DC voltage regulator that can deliver a maximum of five volts at three amps.
 It works with an input voltage between 10 and 60 volts. The powermod-tps54260 is designed to be modular and
 can be placed on any project that requires a stable five-volt power supply. It is based on the Texas Instruments TPS54260 \cite{TPS54260DataSheet}.
-
 
 \subsection{RJ45}
 An RJ45 connector is a type of connector commonly used on Ethernet cables.
@@ -149,12 +149,18 @@ the states of the field gates and the connections between them. This makes an FP
 "Lightside Instruments AS develops instruments with model based network management for use in networking, 
 network interconnect testing and telemetry. Designed with YANG (RFC7950) model and NETCONF (RFC6241) protocol. 
 Based on IETF standards and drafts. Implemented with software tools available in Debian,
-programmable logic and open hardware."
+programmable logic and open hardware." \cite{lsi}
+
+\subsection{Use Case}
+This product will be the first sensor platform developed with NETCONF in mind. 
+It is developed to be a reference implementation of our/IETF's sensor model, and will
+be referenced by future designs. It will also be deployed at Bitraf to monitor air quality.
 
 \section{Design}
 \subsection{Hardware}
 \subsubsection{Philosophy}
-We believe that simplicity is the key to robust systems, the Spark4pi-sensors platform is designed following this simple philosophy based on the 
+We believe that simplicity is the key to robust systems, 
+the Spark4pi-sensors platform is designed following this simple philosophy based on the 
 Unix philosophy which favors modularity over monolithic design \cite{BasicsUnixPhilosophy}.
 Each of Lightside Instruments AS products must therefor meet the following criteria:
 \begin{itemize}
@@ -162,8 +168,8 @@ Each of Lightside Instruments AS products must therefor meet the following crite
     \item Interopperate with other Lightside Instruments AS products.
     \item Present a NETCONF/YANG interface.
 \end{itemize}
-Consisting only of a power delivery system, an FPGA, twelve pull-up resistors and six RJ45 connectors. We have 
-created a design that meets these criteria.
+Consisting only of a power delivery system, an FPGA, twelve pull-up resistors and six RJ45 connectors. 
+We have created a design that meets these criteria.
 \\
 \\
 Through this simple philosophy Lightside Instruments AS has created an ecosystem of interoperating products that can be
@@ -176,7 +182,8 @@ The ice4pi will communicate with the Raspberry Pi through an SPI interface.
 
 \subsection{Software}
 \subsubsection{YANG}
-A YANG model will be developed for sensors, We will also consider the viability of using existing models that implement support for sensors.
+A YANG model will be developed for sensors, 
+We will also consider the viability of using existing models that implement support for sensors.
 The model must support the following:
 \begin{itemize}
   \item An infinite ammount of sensors.
@@ -189,7 +196,8 @@ A NETCONF module will be developed using C and Python. This module will support 
 making it hardware agnostic.
 
 \subsubsection{Grafana}
-A NETCONF plugin will be developed for Grafana. This plugin will prompt NETCONF endpoints at a regular interval and store it in a timeseries database.
+A NETCONF plugin will be developed for Grafana. 
+This plugin will prompt NETCONF endpoints at a regular interval and store it in a timeseries database.
 This will make the data searchable trough XPATH.
 
 \pagebreak
